@@ -1,6 +1,7 @@
 import datetime, base64, requests, json
 from Crypto.Hash import CMAC
 from Crypto.Cipher import AES
+import os
 
 # 参考: https://doc.candyhouse.co/ja/SesameAPI
 
