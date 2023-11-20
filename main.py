@@ -9,7 +9,7 @@ uuid = os.environ['UUID']
 secret_key = os.environ['SECRET_KEY']
 api_key = os.environ['API_KEY']
 
-cmd = 82  # 88/82/83 = 押すor離す/押す/離す
+cmd = 89  # 89/88/82/83 = 押して離す/押すor離す/押す/離す
 history = 'SesameBot'
 base64_history = base64.b64encode(bytes(history, 'utf-8')).decode()
 
