@@ -5,9 +5,9 @@ import os
 
 # 参考: https://doc.candyhouse.co/ja/SesameAPI
 
-uuid = os.environ['UUID']
-secret_key = os.environ['SECRET_KEY']
-api_key = os.environ['API_KEY']
+uuid = os.environ['UUID_SB']
+secret_key = os.environ['SECRET_KEY_SB']
+api_key = os.environ['API_KEY_SB']
 
 cmd = 89  # 89/88/82/83 = 押して離す/押すor離す/押す/離す
 history = 'SesameBot'
