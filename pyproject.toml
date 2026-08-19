@@ -5,7 +5,7 @@ description = "Sesame スマートロックを操作する"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
-    "certifi==2024.7.4",
+    "certifi==2026.7.22",
     "chardet==4.0.0",
     "clr==1.0.3",
     "idna==3.15",
