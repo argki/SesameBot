@@ -3,7 +3,7 @@ name = "sesame-bot"
 version = "0.1.0"
 description = "Sesame スマートロックを操作する"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.14"
 dependencies = [
     "certifi==2024.7.4",
     "chardet==4.0.0",
