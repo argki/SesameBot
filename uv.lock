@@ -71,15 +71,6 @@ wheels = [
 ]
 
 [[package]]
-name = "chardet"
-version = "4.0.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/ee/2d/9cdc2b527e127b4c9db64b86647d567985940ac3698eeabc7ffaccb4ea61/chardet-4.0.0.tar.gz", hash = "sha256:0d6f53a15db4120f2b08c94f11e7d93d2c911ee118b6b30a04ec3ee8310179fa", size = 1907771, upload-time = "2020-12-10T19:35:33.971Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/19/c7/fa589626997dd07bd87d9269342ccb74b1720384a4d739a1872bd84fbe68/chardet-4.0.0-py2.py3-none-any.whl", hash = "sha256:f864054d66fd9118f2e67044ac8981a54775ec5b67aed0441892edb553d21da5", size = 178743, upload-time = "2020-12-10T19:35:32.469Z" },
-]
-
-[[package]]
 name = "charset-normalizer"
 version = "3.5.1"
 source = { registry = "https://pypi.org/simple" }
@@ -174,15 +165,6 @@ wheels = [
 ]
 
 [[package]]
-name = "clr"
-version = "1.0.3"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/75/8f/22b6b4813e45da30d2411d7c807364e806188beb4a0a41cb8c5f739cb39c/clr-1.0.3.tar.gz", hash = "sha256:26505b51f73518d531a52b1f7855488f8c764de94f248ebb7cbe0549acc9d333", size = 2610, upload-time = "2017-01-26T17:06:43.688Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/a4/71/fb95dfed94ce26310b54216f868d113cb0202691ae56ee4bca2e931f50b0/clr-1.0.3-py2.py3-none-any.whl", hash = "sha256:7553f81f7ddc5579e45616ced5fcbdae3941ec817dacf5972d39a156c7cdba1a", size = 4419, upload-time = "2017-01-26T17:06:45.2Z" },
-]
-
-[[package]]
 name = "cryptography"
 version = "50.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -242,19 +224,6 @@ wheels = [
 ]
 
 [[package]]
-name = "naked"
-version = "0.1.31"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "pyyaml" },
-    { name = "requests" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/62/0e/7b009568d9bbd8c0e659f1ea286e68d80f4cc31daa18447299c39445541f/Naked-0.1.31.tar.gz", hash = "sha256:12b76b8a14595d07039422f1d2219ca8fbef8b237f9cdf5d8e947c03e148677e", size = 550388, upload-time = "2015-03-18T02:00:01.566Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/02/36/b8107b51adca73402ec1860d88f41d958e275e60eea6eeaa9c39ddb89a40/Naked-0.1.31-py2.py3-none-any.whl", hash = "sha256:19de9961f4edb29e75cf837e8e031d6b52fbba4f0033515893d26f69c74b3b1f", size = 590559, upload-time = "2015-03-18T02:00:05.915Z" },
-]
-
-[[package]]
 name = "pycparser"
 version = "3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -262,12 +231,6 @@ sdist = { url = "https://files.pythonhosted.org/packages/1b/7d/92392ff7815c21062
 wheels = [
     { url = "https://files.pythonhosted.org/packages/0c/c3/44f3fbbfa403ea2a7c779186dc20772604442dde72947e7d01069cbe98e3/pycparser-3.0-py3-none-any.whl", hash = "sha256:b727414169a36b7d524c1c3e31839a521725078d7b2ff038656844266160a992", size = 48172, upload-time = "2026-01-21T14:26:50.693Z" },
 ]
-
-[[package]]
-name = "pyyaml"
-version = "6.0.1"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/cd/e5/af35f7ea75cf72f2cd079c95ee16797de7cd71f29ea7c68ae5ce7be1eda0/PyYAML-6.0.1.tar.gz", hash = "sha256:bfdf460b1736c775f2ba9f6a92bca30bc2095067b8a9d77876d1fad6cc3b4a43", size = 125201, upload-time = "2023-07-18T00:00:23.308Z" }
 
 [[package]]
 name = "requests"
@@ -314,15 +277,8 @@ name = "sesame-bot"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
-    { name = "certifi" },
-    { name = "chardet" },
-    { name = "clr" },
     { name = "cryptography" },
-    { name = "idna" },
-    { name = "naked" },
-    { name = "pyyaml" },
     { name = "requests" },
-    { name = "urllib3" },
 ]
 
 [package.dev-dependencies]
@@ -332,15 +288,8 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "certifi", specifier = "==2024.7.4" },
-    { name = "chardet", specifier = "==4.0.0" },
-    { name = "clr", specifier = "==1.0.3" },
     { name = "cryptography", specifier = ">=50.0.0" },
-    { name = "idna", specifier = "==3.15" },
-    { name = "naked", specifier = "==0.1.31" },
-    { name = "pyyaml", specifier = "==6.0.1" },
-    { name = "requests", specifier = "==2.33.0" },
-    { name = "urllib3", specifier = "==2.7.0" },
+    { name = "requests", specifier = ">=2.32.5" },
 ]
 
 [package.metadata.requires-dev]
