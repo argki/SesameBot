@@ -2,7 +2,7 @@
 """Sesame スマートロックを操作する."""
 
 import base64
-import datetime
+import datetime as dt
 import json
 import logging
 import os
@@ -17,7 +17,7 @@ LOGGER = logging.getLogger(__name__)
 _REQUEST_TIMEOUT_SECONDS = 30
 _CMD_PRESS_AND_RELEASE = 89
 _CMAC_MESSAGE_SLICE = slice(2, 8)
-_JST = datetime.timezone(datetime.timedelta(hours=9))
+_JST = dt.timezone(dt.timedelta(hours=9))
 
 
 def main() -> None:
@@ -34,7 +34,7 @@ def main() -> None:
     LOGGER.info(base64_history)
     headers = {"x-api-key": api_key}
 
-    ts = int(datetime.datetime.now(tz=_JST).timestamp())
+    ts = int(dt.datetime.now(tz=_JST).timestamp())
     message = ts.to_bytes(4, byteorder="little")
     message_hex = message.hex()[_CMAC_MESSAGE_SLICE]
 
